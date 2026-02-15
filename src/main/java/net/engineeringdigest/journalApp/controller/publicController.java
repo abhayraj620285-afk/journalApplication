@@ -34,6 +34,7 @@ public class publicController {
     private JwtUtil jwtUtil;
     @GetMapping("/health-check")
     public String healthcheck(){
+        log.info("Health is OK !");
         return "OK";
     }
 
